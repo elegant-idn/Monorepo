@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    build: ./packages/pokedex
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./packages/pokedex:/app
+      - /app/node_modules
